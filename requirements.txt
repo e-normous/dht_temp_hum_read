@@ -1,0 +1,3 @@
+pandas
+board
+adafruit_dht
