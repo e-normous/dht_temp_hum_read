@@ -32,7 +32,12 @@ while True:
                 columns=["Zeit", "Temperatur", "Luftfeuchtigkeit"],
             )
 
-            df.to_csv("temp_hum.csv", index=False)
+            # df.to_csv("temp_hum.csv", index=False)
+            # instead of saving the data in a df we could also easily create a .txt file
+            with open("data.txt", "a") as f:
+                f.write(f"Datum: {date_time}\n")
+                f.write(f"Temperatur in Grad Celsius: {temperature_c}\n")
+                f.write(f"Luftfeuchtigkeit: {humidity}%\n\n\n")
 
             print(
                 f"Data stored! Next measurement in {int(data_point_intervall_seconds/60)} minutes."

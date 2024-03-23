@@ -1,3 +1,4 @@
 pandas
-board
-adafruit_dht
+adafruit-circuitpython-dht
+#board
+#adafruit_dht
